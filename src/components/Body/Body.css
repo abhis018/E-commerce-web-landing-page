@@ -1,0 +1,174 @@
+.header {
+    background-color: red;
+    display: flex;
+}
+.text {
+    width: 400px;
+    height: 30px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 13px;
+    font-weight: bold;
+    color: grey;
+}
+.text1 {
+    height: 28px;
+    border-radius: 2px;
+    border: 1px solid brown;
+    outline: none;
+    margin-top: 5px;
+    color: black;
+    background-color: red;
+}
+
+.bi {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+}
+.ton{
+    width: 100px;
+    height: 32px;
+    border-radius: 2px;
+    margin-left: 20px; 
+    cursor: pointer;
+}
+.ton-1 {
+    width: 100px;
+    height: 32px;
+    border-radius: 2px;
+    margin-left: 20px;
+    color: black;
+    background-color: red;
+    outline: 0;
+}
+.input {
+    margin-left: 70px;
+}
+
+.logo{
+    width: 130px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.country-text {
+    margin-top: 1px;
+}
+
+button {
+    border: none;
+    outline: none;
+    color: red;
+    background-color: rgba(240, 233, 233, 0.726);
+    border-radius: 5px;
+}
+
+button:hover {
+    color: black;
+}
+.sale {
+    display: flex;
+}
+.filter {
+    background-color: rgba(240, 233, 233, 0.726);
+    padding-right: 30px;
+    padding-left: 45px;
+    text-align: center;
+}
+form {
+    text-align: left;
+}
+.sort {
+    outline: none;
+    color: red;
+    border: 1px solid red;
+}
+.review {
+    text-align: left;
+}
+.items {
+    flex: 50%;
+}
+
+.product {
+    width: 220px;
+}
+
+.box {
+    border: 1px solid none;
+    width: max-content;
+    display: flex;
+    padding: 30px;
+}
+
+p{
+    margin-left: 40px;
+}
+
+.but{
+    margin-left: 40px;
+}
+
+.price {
+    color: red;
+    margin-left: 40px;
+}
+
+.des {
+    display: flex;
+}
+
+.rating {
+    width: max-content;
+    height: min-content;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.dropbtn{
+    height: 30px;
+    border-radius: 2px;
+}
+.dropdown {
+    position: relative;
+    width: min-content;
+    display: inline-block;
+    margin-left: 20px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    font-size: 14px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: white;}
+
+
+
