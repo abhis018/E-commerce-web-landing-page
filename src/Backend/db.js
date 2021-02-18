@@ -4,7 +4,7 @@ let product = [
         "picture":"C:/Users/abhis/OneDrive/Desktop/selling-app/src/components/Body/laptop.jpg",
         "price":62000,
         "rating": 3,
-        "description":"A typical computer system consists of a computer case a power supply unit, a motherboard, a central processing unit (CPU), main memory, and a hard disk drive.Input devices include a keyboard, mouse, microphone, video camera, and image scanner.Output devices include a monitor, speakers, and a printer."
+        "description":"A typical computer system consists of a computer case,a power supply unit, a motherboard, a central processing unit (CPU), main memory, and a hard disk drive.Input devices include a keyboard, mouse, microphone, video camera, and image scanner.Output devices include a monitor, speakers, and a printer."
     },
     {
         "id":2,
