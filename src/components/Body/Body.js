@@ -35,22 +35,6 @@ const mapStateToProps = state => {
     }
   }
 
-    const filterType = {
-        pricefilter: {
-            'greaterthan10000' : 'greater than 10000',
-            'between4001&10000' : 'between 4001 & 10000',
-            'between2501&4000' : 'between 2501 & 4000',
-            'between1001&2500' : 'between 1001 & 2500',
-            'lessthan1000' : 'greater than 1000'
-        },
-        ratingfilter : {
-            'equalto5' : 'equal to 5',
-            'greaterthan4' : 'greater than 4',
-            'greaterthan3' : 'greater than 3',
-            'greaterthan2' : 'greater than 2',
-            'greaterthan1' : 'greater than 1'
-        }
-    }
 class Body extends Component{
     constructor () {
         super()
@@ -510,11 +494,11 @@ class Body extends Component{
                         <form  onChange={this.onChange}>
                             <input type="radio" name="priceFilter" value="greaterthan10000"/>
                             <label htmlFor=""> &#8377; 10001 & Above</label><br/>
-                            <input type="radio" name="priceFilter" value="between4001&10000"/>
+                            <input type="radio" name="priceFilter" value="between4001_10000"/>
                             <label htmlFor=""> &#8377; 4001 - &#8377; 10000</label><br/>
-                            <input type="radio" name="priceFilter" value="between2501&4000"/>
+                            <input type="radio" name="priceFilter" value="between2501_4000"/>
                             <label htmlFor=""> &#8377; 2501 - &#8377; 4000</label><br/>
-                            <input type="radio" name="priceFilter" value="between1001&2500"/>
+                            <input type="radio" name="priceFilter" value="between1001_2500"/>
                             <label htmlFor=""> &#8377; 1001 - &#8377; 2500</label><br/>
                             <input type="radio" name="priceFilter" value="lessthan1000"/>
                             <label htmlFor=""> &#8377; 1000 & Below</label>
