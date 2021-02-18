@@ -343,12 +343,6 @@ class Body extends Component{
                             <button  onClick={this.onChange} name="ratingFilter" value="greaterthan2">&#9733; &#9733; &#9734; &#9734; &#9734;</button><br/>
                             <button onClick={this.onChange} name="ratingFilter" value="greaterthan1">&#9733; &#9734; &#9734; &#9734; &#9734;</button>
                         </div>
-                        <h5>Sort</h5>
-                        <select id="sort" name="sort" className="sort">
-                            <option value="Price: Low to High">Price: Low to High</option>
-                            <option value="Price: High to Low">Price: High to Low</option>
-                            <option value="Reviews: High to Low">Reviews: High to Low</option>
-                        </select> 
                     </div>
                     <div className="items">
                         {this.props.product.map(ele => (
