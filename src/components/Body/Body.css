@@ -16,8 +16,13 @@ p{
     font-size: 13px;
     font-weight: bold;
     color: grey;
+    margin-right: 70%;
+}
+.buy-but {
+    width: 100px;
 }
 .text1 {
+    width: 140px;
     height: 28px;
     border-radius: 2px;
     border: 1px solid brown;
@@ -40,7 +45,7 @@ p{
     cursor: pointer;
 }
 .ton-1 {
-    width: 100px;
+    width: 140px;
     height: 32px;
     border-radius: 2px;
     margin-left: 20px;

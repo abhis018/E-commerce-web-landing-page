@@ -1,0 +1,3 @@
+export const CHANGE_FILTER_TYPE = 'CHANGE_FILTER_TYPE';
+export const SET_PRODUCT = 'SET_PRODUCT';
+export const FILTER_PRODUCT = 'FILTER_PRODUCT';
