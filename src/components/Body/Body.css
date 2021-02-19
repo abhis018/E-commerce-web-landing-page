@@ -1,5 +1,5 @@
 .header {
-    background-color: red;
+    background-color: #1ecbe1;
     display: flex;
 }
 .text {
@@ -8,42 +8,62 @@
     margin-top: 5px;
     border: none;
     outline: none;
-    border-radius: 2px;
+    border-radius: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 p{
     font-size: 13px;
-    font-weight: bold;
+    font-family: 'Karla', sans-serif;
     color: grey;
     margin-right: 70%;
     margin-left: 40px;
 }
 .buy-but {
-    width: 100px;
+    height: 30px;
+    color: white;
+    background-color:#f14e4e;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cart{
+    height: 30px;
+    color: white;
+    background-color:#f14e4e;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .text1 {
     width: 140px;
     height: 28px;
-    border-radius: 2px;
+    border-radius: 4px;
     border: 1px solid brown;
     outline: none;
-    margin-top: 5px;
+    margin-top: 7px;
     color: black;
-    background-color: red;
+    background-color: white;
+    font-family: 'Karla', sans-serif;
+}
+.name {
+    text-align: left;
+    margin-left: 45px;
 }
 
 .bi {
     margin-top: 10px;
-    margin-left: 30px;
     color: white;
 }
 .ton{
     width: 100px;
     height: 32px;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-left: 20px; 
     cursor: pointer;
+    background-color: white;
+    color: black;
+    font-family: 'Karla', sans-serif;
 }
 .ton-1 {
     width: 140px;
@@ -53,9 +73,10 @@ p{
     color: black;
     background-color: red;
     outline: 0;
+    font-family: 'Karla', sans-serif;
 }
 .input {
-    margin-left: 70px;
+    margin-left: 150px;
 }
 
 .logo{
@@ -64,9 +85,6 @@ p{
     margin-top: 5px;
     margin-left: 50px;
 }
-.country-text {
-    margin-top: 1px;
-}
 
 button {
     border: none;
@@ -74,6 +92,18 @@ button {
     color: red;
     background-color: rgba(240, 233, 233, 0.726);
     border-radius: 5px;
+    font-family: 'Karla', sans-serif;
+}
+input:placeholder-shown{
+    padding-left: 20px;
+    font-family: 'Karla', sans-serif;
+}
+.head{
+    font-family: 'Black Ops One', cursive;
+    color: rgb(22, 22, 7);
+    height:fit-content;
+    font-size: 30px;
+    margin-bottom: 0;
 }
 
 button:hover {
@@ -91,6 +121,7 @@ button:hover {
 form {
     text-align: left;
     width: max-content;
+    font-family: 'Karla', sans-serif;
 }
 .sort {
     outline: none;
@@ -117,11 +148,15 @@ form {
 
 .but{
     margin-left: 40px;
+    margin-top: 30px;
 }
 
 .price {
     color: red;
+    margin-bottom: 10px;
     margin-left: 40px;
+    font-weight: lighter;
+    font-size: 25px;
 }
 
 .des {
@@ -132,10 +167,11 @@ form {
     width: max-content;
     height: min-content;
     padding: 5px;
-    margin-left: 10px;
-    margin-top: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
     border-radius: 5px;
-    color: white;
+    color: goldenrod;
+    font-size: 25px;
 }
 
 .dropbtn{
@@ -175,3 +211,53 @@ form {
 
 
 
+@media (min-width: 640px){
+    .text{width: 50%;}
+    .ton{width: 35%;}
+    .text1{width: 100px; margin-right: 20px;}
+    .bi{margin-right: 40px;}
+    p{font-size: 10px; margin-right: 82%;}
+    .head{margin-top: 10px;margin-left: 40px;}
+    .product{width: 100px;height: 90px; margin-top: 40px;}
+    .buy-but{width: fit-content;}
+}
+
+@media (min-width: 700px){
+    .text{width: 50%;}
+    .ton{width: 30%;}
+    .text1{margin-right: 40px;}
+    .bi{margin-right: 40px;}
+    p{font-size: 10px;}
+    .head{margin-top: 5px;}
+    .product{width: 180px;height: 130px;}
+}
+@media (min-width: 850px){
+    .text{width: 60%;}
+    .input{width: 50%;}
+    .head{margin-top: 5px;}
+    p{font-size: 13px;}
+}
+@media (min-width: 900px){
+    .text{width: 60%;}
+    .input{width: 50%;}
+    .head{margin-top: 5px;}
+    p{font-size: 13px;}
+}
+
+@media (min-width: 992px){
+    .input{width: 30%;}
+    .ton{width: 20%;}
+    .text1{width: fit-content;}
+    p{font-size: 14px;}
+    .product{width: 180px;height: 130px;}
+}
+
+@media (min-width: 1024px){
+    p{width: 24%; font-size: 14px;}
+}
+   
+@media (min-width: 1200px){
+    .input{width: 50%;}
+    p{width: 30%;font-size: 15px;}
+    .text1{width: 150px;}
+}

@@ -44,7 +44,7 @@ class Body extends Component{
         return (
             <div className='body'>
                 <div className="header">
-                    <img className="logo" src={logo}/>
+                    <h4 className="head i">ELECKCART</h4>
                     <div className="input">
                         <input className="text" placeholder="Search for products"/>
                         <button className="ton grow">Search</button>
@@ -332,16 +332,17 @@ class Body extends Component{
                     <div className="items">
                         {this.props.product.map(ele => (
                             <div className="box">
-                                <img className="product" src={ele.picture}/>
+                                    <img className="product" src={ele.picture}/>
                                 <div>
+                                    <h3 className="name">{ele.name}</h3>
                                     <p>{ele.description}</p>
                                     <div className="des">
                                         <h3 className="price">&#8377; {ele.price}</h3>
-                                        <div className="rating bg-red">{ele.rating} &#9733;</div>
+                                        <div className="rating">{ele.rating} &#9733;</div>
                                     </div>
                                     <div className="but">
-                                        <button>ADD TO CART</button>
-                                        <button className="buy-but mh3">BUY</button>
+                                        <button className="cart">Add to Cart</button>
+                                        <button className="buy-but mh3">Buy Now</button>
                                     </div>
                                 </div>
                             </div>
