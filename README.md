@@ -1,5 +1,5 @@
 INTRODUCTION
-
+![alt text](https://github.com/abhis018/E-commerce-web-landing-page/blob/main/display/display1.png)
                         This is the visual part of the web page:
 
 
