@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import './Body.css';
 import logo from './pic.jpg';
 import { connect } from 'react-redux';
-import { fetchProduct, setFilter, filterProduct } from './Action';
+import { fetchProduct, setFilter, filterProduct, setSearchField } from './Action';
+import product from '../../Backend/db';
+import store from '../../index';
 
 const mapStateToProps = state => {
     return{
       searchFilter: state.searchFilter,
-      product: state.product
+      product: state.product,
+      searchField: state.searchField,
     }
 }
   
@@ -17,6 +20,7 @@ const mapStateToProps = state => {
       onchange: (event) => dispatch(setFilter(event.target.value)),
       fetchProduct: () => dispatch(fetchProduct()),
       filterProduct: (priceFilter, ratingFilter) => dispatch(filterProduct(priceFilter, ratingFilter)),
+      onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
     }
   }
 
@@ -41,13 +45,16 @@ class Body extends Component{
     }
 
     render(){
+        const { product, searchField, onSearchChange } = this.props;
+        const filteredProducts = product.filter(product => {
+            return product.name.toLowerCase().includes(searchField.toLowerCase());
+        })
         return (
             <div className='body'>
                 <div className="header">
                     <h4 className="head i">ELECKCART</h4>
                     <div className="input">
-                        <input className="text" placeholder="Search for products"/>
-                        <button className="ton grow">Search</button>
+                        <input className="text" placeholder="Search for products" onChange={onSearchChange} />
                     </div>
                     <div className="country-text pl4">
                         <select className="text1" id="country" name="country">
@@ -330,7 +337,7 @@ class Body extends Component{
                         </div>
                     </div>
                     <div className="items">
-                        {this.props.product.map(ele => (
+                        {filteredProducts.map(ele => (
                             <div className="box">
                                     <img className="product" src={ele.picture}/>
                                 <div>

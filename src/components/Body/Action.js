@@ -1,4 +1,4 @@
-import { CHANGE_FILTER_TYPE} from './constants.js';
+import { CHANGE_FILTER_TYPE, CHANGE_SEARCHFIELD} from './constants.js';
 import fetchdata from "../../Backend/controller";
 
 export const setFilter = (radio) => {
@@ -24,3 +24,10 @@ export const filterProduct = (priceFilter, ratingFilter) => {
     }
 }
 
+export const setSearchField = (text) => {
+    console.log(text);
+    return {
+        type: CHANGE_SEARCHFIELD,
+        payload:text
+    }
+}

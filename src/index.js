@@ -10,7 +10,7 @@ import { setFilter } from './components/Body/Action';
 
 
 const store = createStore(selectfilter)
-
+export default store;
 
 ReactDOM.render(
   <React.StrictMode>
